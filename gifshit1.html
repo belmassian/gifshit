@@ -4,11 +4,36 @@
 <head>
   <meta charset="utf-8">
   <title>TRASHY MEMES</title>
+  <style type="text/css">
+  .container{
+    float:right;
+    width:100%;
+    height:auto;
+    clear:both;
+    -webkit-columns: 300px 2;
+   -moz-columns: 300px 2;
+        columns: 300px 2;
+  }
+  .button{
+    float:left;
+    clear:both;
+  }
+  .h1{
+    float:right;
+  }
+    button,
+    div,
+    form,
+    input {
+      margin: 10px;
+    }
+  </style>
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<div id="buttons-view">
   <button data-meme="Kermit the Frog">But That's None of My Business</button>
   <button data-meme="Honey Badger">
     It doesn't give a fuck.
@@ -22,6 +47,7 @@
   <button data-meme="Ice Bucket Challenge">
     I think it was for some disease...
   </button>
+</div>
   <div class="container">
     <h1>Search for Trash Memes Here</h1>
     <div id="memes-view"></div>
@@ -30,8 +56,10 @@
       <input type="text" id="memes-input"><br>
       <input id="add-meme" type="submit" value="Flavor Flav!">
     </form>
+  </div>
+  <div id="gifs-appear-here">
+  </div>
   <script src="gifshit1.js"></script>
-
 </body>
 
 </html>
